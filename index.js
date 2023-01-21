@@ -1,1 +1,1 @@
-export * from "./src/outline";
+export * from "./src/outline/index";
