@@ -1,0 +1,39 @@
+{
+  "name": "svg-to-icons",
+  "version": "1.0.0",
+  "description": "NPM package that converts figma svg to react components",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf outline solid package *.tgz",
+    "export": "figma-export use-config figma.config.js",
+    "build": "run-s clean export"
+  },
+  "homepage": "https://github.com/NikhilIluri/svg-to-icons#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NikhilIluri/svg-to-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NikhilIluri/svg-to-icons/issues"
+  },
+  "keywords": [
+    "svg",
+    "icons",
+    "figma"
+  ],
+  "author": "Nikhil Iluri",
+  "license": "ISC",
+  "devDependencies": {
+    "@figma-export/cli": "^4.5.0",
+    "@figma-export/output-components-as-svg": "^4.5.0",
+    "@figma-export/transform-svg-with-svgo": "^4.5.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.1.1"
+  },
+  "files": [
+    "outline/",
+    "solid/"
+  ]
+}
