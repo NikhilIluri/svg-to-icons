@@ -18,7 +18,7 @@ module.exports = {
       "components",
       {
         fileId,
-        onlyFromPages: ["outline"],
+        onlyFromPages: ["icons"],
         outputters,
       },
     ],
