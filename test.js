@@ -1,7 +1,7 @@
 const fs = require("fs");
 const $ = require("cheerio");
 
-const directories = ["outline"];
+const directories = ["icons"];
 let errors = 0;
 
 directories.forEach((dir) =>
