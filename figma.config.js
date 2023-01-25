@@ -1,6 +1,4 @@
 require("dotenv").config();
-const svgo = require('@figma-export/transform-svg-with-svgo');
-const outlineSVGOConfig = require('./svgo/config');
 
 const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const fileId = process.env.FILE_ID;
@@ -24,8 +22,7 @@ module.exports = {
       {
         fileId,
         onlyFromPages: ["ThingsToCarry"],
-        outputters,
-        transformers: [svgo({ multipass: true, plugins: outlineSVGOConfig })]
+        outputters
       },
     ],
     // add the new pages here
