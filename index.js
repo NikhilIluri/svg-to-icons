@@ -1,1 +1,1 @@
-export * from "./src/icons/index";
+export * from "./src/ThingsToCarry/index";

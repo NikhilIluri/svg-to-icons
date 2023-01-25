@@ -4,11 +4,8 @@
 /node_modules
 
 # build
-/outline
-/solid
 /react
 /src
-/icons
 
 # misc
 .DS_Store
