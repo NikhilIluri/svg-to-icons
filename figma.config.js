@@ -21,7 +21,7 @@ module.exports = {
       "components",
       {
         fileId,
-        onlyFromPages: ["ThingsToCarry"],
+        onlyFromPages: ["TourPage"],
         outputters
       },
     ],
