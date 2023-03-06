@@ -7,7 +7,7 @@
     "clean": "rimraf src package TourPage *.tgz",
     "export": "figma-export use-config figma.config.js",
     "test": "node test.js",
-    "bundle": "rollup --config",
+    "bundle": "rollup --config --bundleConfigAsCjs",
     "build": "run-s clean export bundle",
     "np": "np",
     "release": "run-s build np"
