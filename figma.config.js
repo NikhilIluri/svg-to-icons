@@ -6,7 +6,7 @@ const fileId = process.env.FILE_ID;
 const outputters = [
   require("@figma-export/output-components-as-svg")({ output: "./" }),
   require("@figma-export/output-components-as-svgr")({
-    getFileExtension: () => ".tsx",
+    getFileExtension: () => ".js",
     getComponentName: ({ componentName, pageName }) =>
       capitalize(componentName),
       getSvgrConfig: () => ({}),
