@@ -1,11 +1,9 @@
-// tsconfig.json
 {
   "compilerOptions": {
-    "jsx": "react",
-    "strict": true,
-    "noImplicitAny": true,
-    "allowSyntheticDefaultImports": true,
     "declaration": true,
-    "outDir": "react"
+    "outDir": "react",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es2015", "dom"]
   }
 }

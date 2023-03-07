@@ -4,7 +4,7 @@
   "description": "NPM package that converts figma svg to react components",
   "main": "react/index",
   "scripts": {
-    "clean": "rimraf src package TourPage *.tgz",
+    "clean": "rimraf src react package TourPage *.tgz",
     "export": "figma-export use-config figma.config.js",
     "test": "node test.js",
     "bundle": "rollup --config --bundleConfigAsCjs",
