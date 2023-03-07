@@ -9,7 +9,7 @@ const outputters = [
     getFileExtension: () => ".tsx",
     getComponentName: ({ componentName, pageName }) =>
       capitalize(componentName),
-      getSvgrConfig: () => ({ typescript: true }),
+      getSvgrConfig: () => ({}),
       output: "./src",
   }),
 ];
