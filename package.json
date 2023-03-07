@@ -2,7 +2,7 @@
   "name": "svg-to-icons",
   "version": "1.0.9",
   "description": "NPM package that converts figma svg to react components",
-  "main": "react/index",
+  "main": "react/index.js",
   "scripts": {
     "clean": "rimraf src react package TourPage *.tgz",
     "export": "figma-export use-config figma.config.js",
