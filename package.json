@@ -1,11 +1,10 @@
 {
-  "name": "svg-to-icons",
-  "version": "1.0.12",
-  "description": "NPM package that converts figma svg to react components",
-  "main": "react/index.ts",
-  "types": "index.d.ts",
+  "name": "thrillo-icons",
+  "version": "1.0.0",
+  "description": "NPM package that converts figma to react components",
+  "main": "react/index",
   "scripts": {
-    "clean": "rimraf src react package TourPage *.tgz",
+    "clean": "rimraf src react TourPage package *.tgz",
     "export": "figma-export use-config figma.config.js",
     "test": "node test.js",
     "bundle": "rollup --config",
@@ -13,20 +12,20 @@
     "np": "np",
     "release": "run-s build np"
   },
-  "homepage": "https://github.com/NikhilIluri/svg-to-icons#readme",
+  "homepage": "https://github.com/thrillophilia/Thrillo-Icons#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NikhilIluri/svg-to-icons.git"
+    "url": "https://github.com/thrillophilia/Thrillo-Icons.git"
   },
   "bugs": {
-    "url": "https://github.com/NikhilIluri/svg-to-icons/issues"
+    "url": "https://github.com/thrillophilia/Thrillo-Icons/issues"
   },
   "keywords": [
     "svg",
     "icons",
     "figma"
   ],
-  "author": "Nikhil Iluri",
+  "author": "Thrillophilia",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-react": "^7.18.6",
@@ -35,18 +34,17 @@
     "@figma-export/output-components-as-svgr": "^4.5.0",
     "@figma-export/transform-svg-with-svgo": "^4.5.0",
     "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-typescript": "^11.0.0",
-    "@types/react": "^18.0.28",
+    "@types/react": "^18.0.27",
     "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.0.3",
     "np": "^7.6.3",
     "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
-    "rimraf": "^4.1.1",
-    "rollup": "^3.19.0",
-    "typescript": "^4.9.5"
+    "rimraf": "^4.1.2",
+    "rollup": "^3.10.1"
   },
   "files": [
-    "react"
+    "react/",
+    "TourPage/"
   ]
 }
