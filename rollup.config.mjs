@@ -1,13 +1,13 @@
-import { babel } from '@rollup/plugin-babel';
+import typescript from "@rollup/plugin-typescript";
 
 const config = [
   {
-    input: "index.js",
+    input: "index.ts",
     output: {
       dir: "react",
       format: "module",
     },
-    plugins: [babel({ babelHelpers: 'bundled' })]
+    plugins: [typescript()],
   },
 ];
 
